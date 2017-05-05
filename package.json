@@ -1,0 +1,25 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "budgeting app",
+  "main": "app.module.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/paulyorde/budget-app"
+  },
+  "keywords": [
+    "angular",
+    "angular-fire",
+    "firebase",
+    "broserify"
+  ],
+  "author": "Paul Yorde",
+  "license": "ISC",
+
+  "dependencies": {
+    "angular-route": "latest"
+  }
+}

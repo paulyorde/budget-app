@@ -1,0 +1,36 @@
+<!Doctype html>
+<html ng-app="App">
+<head>
+  <title>Pigify</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.min.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+  <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+
+  <script src="app.module.js"></script>
+  <script src="app.config.js"></script>
+  <script src="bank/bank.module.js"></script>
+  <script src="bank/bank.component.js"></script>
+  <script src="budget/budget.module.js"></script>
+  <script src="budget/budget.component.js"></script>
+</head>
+<body>
+  <bank></bank>
+  <budget></budget>
+ <div ng-view></div>
+
+ <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyA7uYx1VcOe1sD2bE46Bb_IWGA-543nOcw",
+        authDomain: "pigify-c7db8.firebaseapp.com",
+        databaseURL: "https://pigify-c7db8.firebaseio.com",
+        projectId: "pigify-c7db8",
+        storageBucket: "pigify-c7db8.appspot.com",
+        messagingSenderId: "334059484335"
+      };
+      firebase.initializeApp(config);
+    </script>
+  </body>
+</html>
